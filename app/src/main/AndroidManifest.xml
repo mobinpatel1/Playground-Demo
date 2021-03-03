@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.neuralit.playground_demo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- For getting image location -->
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlaygroundDemo"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+        <activity android:name=".ImagePicker">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideoPlayerWithAds"></activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.PlaygroundDemo.NoActionBar" />
+        <activity android:name=".CaptionImage">
+
+        </activity>
+        <activity android:name=".APNGDemo" />
+        <activity android:name=".RadioButtonDialog" />
+        <activity android:name=".VideoViewDemo"></activity>
+        <activity android:name=".PDFDemo" />
+        <activity android:name=".DriveIntent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LikeButtonDemo" />
+        <activity android:name=".VideoEditor" />
+        <activity android:name=".ImageEditorDemo" />
+        <activity android:name=".ImageEditor" />
+        <activity android:name=".MainActivity" />
+
+        <service android:name=".TestService" />
+    </application>
+
+</manifest>

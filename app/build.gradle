@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.neuralit.playground_demo"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation files('libs/DynamicPDF.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    implementation 'ja.burhanrashid52:photoeditor:1.1.0'
+    implementation 'com.github.iamutkarshtiwari:Ananas:1.2.4'
+
+    implementation 'com.github.a914-gowtham:Android-video-trimmer:1.5.2'
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'org.apache.poi:poi-ooxml:3.9'
+
+
+
+    // APNG
+    implementation 'com.github.oupson:Kapng-Android:1.0.10'
+
+    //EXO player
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.7'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.7'
+    implementation 'com.google.android.exoplayer:extension-ima:2.10.7'
+
+    implementation 'gun0912.ted:tedbottompicker:2.0.1'
+
+//    implementation  'com.fxn769:pix:1.5.6'
+}
