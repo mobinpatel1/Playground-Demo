@@ -69,4 +69,11 @@ dependencies {
     implementation 'gun0912.ted:tedbottompicker:2.0.1'
 
 //    implementation  'com.fxn769:pix:1.5.6'
+
+    // Navigation drawer
+    implementation 'nl.psdcompany:duo-navigation-drawer:3.0.0'
+
+
+//    Circular image cropper :
+    implementation 'com.github.avito-tech:krop:0.64'
 }

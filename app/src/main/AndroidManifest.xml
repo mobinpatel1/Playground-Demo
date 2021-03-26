@@ -21,24 +21,25 @@
         android:theme="@style/Theme.PlaygroundDemo"
         android:usesCleartextTraffic="true"
         tools:replace="android:label">
-        <activity android:name=".ImagePicker">
+        <activity android:name=".CircularImageCropper">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VideoPlayerWithAds"></activity>
+        <activity android:name=".ImagePicker">
+
+        </activity>
+        <activity android:name=".VideoPlayerWithAds" />
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/Theme.PlaygroundDemo.NoActionBar" />
-        <activity android:name=".CaptionImage">
-
-        </activity>
+        <activity android:name=".CaptionImage"></activity>
         <activity android:name=".APNGDemo" />
         <activity android:name=".RadioButtonDialog" />
-        <activity android:name=".VideoViewDemo"></activity>
+        <activity android:name=".VideoViewDemo" />
         <activity android:name=".PDFDemo" />
         <activity android:name=".DriveIntent">
             <intent-filter>
